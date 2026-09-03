@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Transition&Animantions</title>
+        <style>
+            h1
+            {
+                text-align: center;
+                background-color: rgb(139, 139, 139);
+                color: blue;
+            }
+            #section1
+            {
+                border: 1px solid black;
+                width: 95%;
+                height: 930px;
+                margin: 40px;
+                
+            }
+            button
+            {
+                margin-left: 820px;
+                width: 100px;
+                height: 50px;
+                border: none;
+                background-color: red;
+                border-radius: 15px;
+                transition: 1s;
+            }
+            button:hover
+            {
+                background-color: yellow;
+                transform: scale(1.1);
+            }
+            .box
+            {
+                width: 100px;
+                height: 100px;
+                background: rgb(255, 0, 0);
+               /* animation-name: deepak;
+                animation-delay: 1s;
+                animation-timing-function: ease;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;*/
+                animation:deepak 5s ease alternate infinite;
+                border: 1px solid black; 
+            }
+            .load
+            {
+                width: 100px;
+                height: 100px;
+                border: 5px solid grey;
+                border-radius: 50%;
+                border-top: 5px solid blue;
+                animation: spin 1s  linear infinite;
+            }
+            .rectangle
+            {
+                width: 100px;
+                height: 100px;
+                border: 5px solid red;
+                border-top: 2px solid rgb(218, 11, 11);
+                animation: spin1 1s  linear infinite;
+            }
+            .load1
+            {
+                width: 100px;
+                height: 100px;
+                border: 5px solid rgb(220, 0, 117);
+                border-radius: 10px;
+                animation: spin2 1s linear infinite;
+            }
+            .border
+            {
+                border: 1px solid black;
+                width: 150px;
+                height: 150px;
+                margin: 20px auto;
+                padding: 20px;
+            }
+            @keyframes deepak {
+                to{
+                    transform: scale(0);
+                }
+                from{
+                    transform: scale(300px);
+                }
+            }
+            @keyframes spin {
+                from{
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes spin1 {
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes spin2 {
+                to{
+                    transform: scale(0);
+                }
+                from{
+                    transform: scale(300px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Transitions&Animantions</h1>
+        <section id="section1">
+            <button>Action</button>
+            <div class="border">
+            <div class="box"></div>
+            </div>
+            <div class="border">
+            <div class="load"></div>
+            </div>
+            <div class="border">
+            <div class="rectangle"></div>
+            </div>
+            <div class="border">
+            <div class="load1"></div>
+            </div>
+        </section>
+    </body>
+</html>
