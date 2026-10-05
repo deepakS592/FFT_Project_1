@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresher Party Event</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        h1
+        {
+            text-align: center;
+        }
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
+        li
+        {
+            list-style: none;
+        }
+        #header{
+            background-color: aqua;
+        }
+        #banner
+        {
+            width: 100%;
+            max-width: 1400px;
+            height: auto;
+            display: block;
+            margin: auto;
+            margin-bottom: 500px;
+        }
+
+        #Detail
+        {
+            text-align: center;
+            margin-bottom: 800px;
+        }
+        #SchTable
+        {
+            margin: auto;
+            max-width: 1400px;
+            margin-bottom: 600px;
+        }
+        table
+        {
+            height: 200px;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+        }
+        #SpeakerName
+        {
+            text-align: center;
+            margin-bottom: 500px;
+        }
+        form
+        {
+            text-align: center;
+            border: 1px solid black;
+            margin-bottom: 800px;
+        }
+        #i1
+        {
+            text-align: center;
+        }
+        #Contact
+        {
+            text-align: center;
+            
+        }
+        @media(max-width:600px)
+        {
+            h1{
+                background-color: green;
+            }
+            #banner
+            {
+                width: 100%;
+                height: auto;
+            }
+            h2{
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="header">
+        <h1>Fresher Party Event</h1>
+        <ul>
+            <a href="#head"><li>Home</li></a>
+            <a href="#Detail"><li>Event Detail</li></a>
+            <a href="#SchTable"><li>Schedule Table</li></a>
+            <a href="#SpeakerName"><li>Speakers</li></a>
+            <a href="#RegForm"><li>Form</li></a>
+            <a href="#Contact"><li>Contact</li></a>
+        </ul>
+        </div>
+        <img src="./FresherParty.png" id="banner" alt="image not found"><br><br><br>
+    </div>
+    
+
+    <div id="Detail">
+    <h2>Event Detail :</h2>
+    <p>Date : 21 September 2026</p>
+    <p>Venue : Alfresco</p>
+    <p>Entry Timing : 4:30pm to 9:30pm</p>
+    <p>Dress Code : Movie Character</p><br><br><br>
+    </div><br><br><br><br>
+    
+
+
+    <h2 id="i1">Schedule Table :</h2>
+    <div id="SchTable">
+    <table border="1px" style="border-collapse: collapse; text-align:center;">
+        <thead>
+            <tr>
+                <th>Sr No</th>
+                <th>Schedule Desciption</th>
+                <th>Timing</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Lagori Band Concert</td>
+                <td>4:30pm to 7:00pm</td>
+                <td>Alfresco</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Cheaf Guest Speech</td>
+                <td>7:00pm to 8:00pm</td>
+                <td>Alfresco</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Dinner</td>
+                <td>8:00pm to 9:00pm</td>
+                <td>Food Court</td>
+            </tr>
+        </tbody>
+    </table>
+    </div><br><br><br><br>
+    
+
+
+    <div id="SpeakerName">
+    <h2>Speaker Name :</h2>
+    <p>1. Principal : </p>
+    <img src="./teacher1.jpg" alt="image not found" style="width: 250px; height:250px;">
+    <p>2. Vice Principal : </p>
+    <img src="./teacher2.jpg" alt="image not found" style="width: 250px; height:250px;">
+    </div><br><br><br><br>
+    
+
+    <div id="RegForm">
+    <form>
+        <h2>Registration form</h2>
+        <label>Name : </label>
+        <input type="text"><br><br>
+        <label>Email : </label>
+        <input type="email"><br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button><br><br>
+    </form>
+    </div>
+
+    
+    <div id="Contact">
+        <h2>Contact</h2>
+        <p>Mob : 9410000000</p>
+        <p>Email : xyz@gmail.com</p><br>
+    </div>
+    <hr>
+</body>
+</html>

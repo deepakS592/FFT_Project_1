@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Deepak Portfolio</title>
+        <style>
+            #header
+            {
+                background-color: blueviolet;
+            }
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            h1
+            {
+                text-align: center; 
+                padding-top:  5px ;
+                font-family: sans-serif;
+            }
+            .head
+            {
+                text-align: center;
+            }
+            
+            #grid
+            {
+                display: grid;
+                grid-template-columns: 300px 300px 300px;
+                gap: 150px;
+                padding: 20px;
+                justify-content: center;
+                animation: slide 1s;
+            }
+            .box
+            {
+                border-radius: 10px;
+                padding: 20px;
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+            
+            .box:hover
+            {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            }
+            ul
+            {
+                display: flex;   
+                justify-content: space-around;
+                list-style-type: none;
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+            ul li a
+            {
+                text-decoration:underline;
+                color: rgb(0, 12, 234);
+
+            }
+            .home
+            {
+                background-color: rgb(121, 188, 232);
+                margin-top: 10px;
+            }
+            .about
+            {
+                background-color: rgb(197, 126, 227);
+                margin-top: 10px;
+            }
+            .qual
+            {
+                background-color: rgb(209, 195, 136);
+                margin-top: 10px;
+            }
+            .skill
+            {
+                background-color: rgb(150, 204, 172);
+                margin-top: 10px;
+            }
+            .project
+            {
+                background-color: rgb(238, 164, 156);
+                margin-top: 10px;
+            }
+            @keyframes slide
+            {
+                from
+                {
+                    transform: translateY(20px);
+                }
+                to
+                {
+                    transform: translateY(0);
+                }
+            }
+
+            @media (max-width: 700px)
+            {
+                #grid
+                {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Deepak Portfolio</h1>
+            <ul>
+                <li><a href="#home-link">Home</a></li>
+                <li><a href="#about-link">About</a></li>
+                <li><a href="#Qual-link">Qualifications</a></li>
+                <li><a href="#Skill-link">Skills</a></li>
+                <li><a href="#Project-link">Projects</a></li>
+            </ul>
+        </div>
+        <div id="grid">
+        <div class="box home" id="home-link">
+            <h1>
+                Hello, i am Deepak
+            </h1>
+            <p>I am a student interested in Cloud Computing, Artificial Intelligence
+               and Web Development. I enjoy learning programming, developing projects
+               and exploring new technologies. My goal is to build strong technical
+               skills and pursue a career in Cloud Engineering and related fields.
+            </p>
+        </div>
+        
+        <div class="box about" id="about-link">
+            <h1>About</h1>
+            <p>I am Deepak Suthar, a student passionate about technology, programming and learning new skills. I enjoy exploring different areas of computer science and developing practical projects. I am currently improving my knowledge of programming, web development, cloud computing and other modern technologies. I believe in continuous learning and want to use my technical skills to build useful and creative solutions.</p>
+        </div>
+        <div class="box qual" id="Qual-link">
+            <h1>Qualifications</h1>
+            <p>I am currently pursuing my studies with a strong interest in computer science and technology. During my studies, I have been learning programming languages and web technologies while working on different academic and personal projects. I am continuously improving my problem-solving skills and building a strong foundation in programming, networking, databases and cloud computing.</p>
+        </div>  
+        <div class="box skill" id="Skill-link">
+            <h1><u>Skills :-</u></h1> 
+            <p>
+                <li>Python</li>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>C</li>
+            </p>
+        </div>
+        <div class="box project" id="Project-link">
+            <h1><u>Projects :-</u></h1>
+            <p>I have worked on different projects to improve my programming and web development skills. My projects include creating a personal portfolio website, designing a Facebook login page using HTML and CSS, and developing programs in Python to practice problem solving and programming concepts. These projects help me understand how theoretical concepts can be applied to practical applications.</p>
+        </div>
+        </div>
+        <hr>
+    </body>
+</html>

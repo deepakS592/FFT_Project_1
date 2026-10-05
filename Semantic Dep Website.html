@@ -1,0 +1,546 @@
+<html>
+    <head>
+        <title>semantic dep website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body
+            {
+                background-color: rgb(177, 208, 248);
+            }
+            nav {
+                display: flex;
+                justify-content: space-around;
+            }
+            h1 {
+                text-align: center;
+                padding-top: 10px;
+                font-family: monospace;
+                text-shadow: 2px 4px 8px rgb(0, 0, 0);
+            }
+            #home{
+                margin-bottom: 500px;
+            }
+            #about
+            {
+                margin-bottom: 500px;
+            }
+            #faculty
+            {
+                margin-bottom: 600px;
+            }
+            #courses
+            {
+                margin-bottom: 600px;
+            }
+            #time
+            {
+                margin-bottom: 600px;
+            }
+            #achievement
+            {
+                margin-bottom: 600px;
+            }
+            #events
+            {
+                margin-bottom: 600px;
+            }
+            #contact
+            {
+                margin-bottom: 600px;
+            }
+            header {
+                background-color: rgb(144, 254, 190);
+            }
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            ul {
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                margin-bottom: 10px;
+                font-size: large;
+            }
+            li 
+            {
+                margin-top: 20px;
+                list-style: none;
+            }
+            nav a 
+            {
+                color: rgb(51, 0, 99);
+                text-decoration: none;
+                font-weight: bold;
+            }
+            nav a:hover {
+                text-decoration: underline;
+            }
+            p {
+                margin-top: 15px;
+                text-align: center;
+            }
+            h2 {
+                margin-top: 20px;
+                font-size: medium;
+                color: rgb(255, 65, 65);
+                font-family: cursive;
+                text-shadow: 2px 4px 8px;
+            }
+            h3 {
+                text-align: center;
+                margin-top: 20px;
+            }
+            h4 {
+                text-align: center;
+                margin-top: 15px;
+                color: rgb(175, 125, 220);
+            }
+            section {
+                padding-top: 20px;
+            }
+            .highlights {
+                display: flex;
+                justify-content: space-around;
+                
+            }
+            article {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            img {
+                height: 250px;
+                width: 250px;
+                margin-top: 10px;
+                border-radius: 20px;
+                box-shadow: 2px 4px 6px;
+            }
+            @media(max-width:600px)
+            {
+                .highlights img
+                {
+                    width: 30px;
+                    height: auto;
+                }
+            
+                .container img
+                {
+                    width: 80px;
+                    height: 80px;
+                }
+                .card img 
+                {
+                    width: 100%;
+                    height: auto;
+                }
+                .container
+                {
+                    flex-wrap: wrap;
+                }
+                ul 
+                {
+                    flex-wrap: wrap;
+                    font-size: small;
+                    justify-content: center;
+                }
+                li
+                {
+                    margin: 5px;
+                }
+                table 
+                {
+                    font-size: small;
+                }
+                form 
+                {
+                    width: 80px;
+                }
+                h1 
+                {
+                    font-size: 25px;
+                }
+                p {
+                    font-size: 14px;
+                }
+                nav a
+                {
+                    font-size: small;
+                }
+                .card
+                {
+                    width: 16%;
+                }
+                h3
+                {
+                    font-size: 18px;
+                }
+                h2
+                {
+                    font-size: small;
+                }
+                footer
+                {
+                    font-size: small;
+                    padding: 10px;
+                }
+            }
+            article p {
+                margin-top: 10px;
+            }
+            footer {
+                background-color: rgb(77, 77, 77);
+                padding: 15px;
+                text-align: center;
+            }
+            table {
+                width: 100%;
+                margin-top: 15px;
+                border-collapse: collapse;
+            }
+            table, th, td {
+                border: 1px solid rgb(205, 0, 0);
+                padding: 8px;
+                text-align: center;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 45%;
+                margin: 20px auto;
+                margin-top: 15px;
+                padding: 10px;
+                background-color: rgb(236, 149, 34);
+                border: 1px solid black;
+                box-shadow: 2px 4px 8px;
+                font-weight: bold;
+            }
+            form button {
+                margin-top: 15px;
+                padding: 10px;
+                background-color: white;
+                border: 1px solid black;
+                font-weight: bold;
+            }
+            #data
+            {
+                animation:deepak 5s ease alternate infinite;
+            }
+            #AI
+            {
+                animation:deepak 5s ease alternate infinite;
+            }
+            #Cyber
+            {
+                animation:deepak 5s ease alternate infinite;
+            }
+            @keyframes deepak {
+                to{
+                    transform: scale(0);
+                }
+                from{
+                    transform: scale(300px);
+                }
+            }
+            .container {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 25px;
+                border: 1px solid black;
+            }
+            
+            .card {
+                width: 150px;
+                text-align: center;
+            }
+            
+            .card img {
+                width: 130px;
+                height: 130px;
+                object-fit: cover;
+                transition: transform 0.3s;
+            }
+            
+            .card img:hover {
+                transform: scale(1.25);
+            }
+            
+            .card h4 {
+                margin-top: 10px;
+                color: black;
+                font-family: serif;
+            }
+            
+            .card p {
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Semantic Dep Web </h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about Department</a></li>
+                    <li><a href="#faculty">faculty</a></li>
+                    <li><a href="#courses">courses</a></li>
+                    <li><a href="#time">timetable</a></li>
+                    <li><a href="#achievement">achievement</a></li>
+                    <li><a href="#events">events</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home">
+                <marquee><h2>HELLO MCA GRADUTES,WELCOME</h2> </marquee> 
+                <h3>Department Introduction</h3>
+                <p>This introduction is about the MCA Department</p>
+                
+                <h3>Highlights</h3> 
+                
+                <div class="highlights">
+                    <article>
+                        <img src="./paulos-ai-8330457_1920.jpg" id="data">
+                        <p>Data Science</p>
+                    </article>
+
+                    <article>
+                        <img src="./roses_street-ai-generated-8674984.png" id="AI">
+                        <p>AI/ML</p>
+                    </article>
+
+                    <article>
+                        <img src="./thedigitalway-computer-1591018.jpg" id="Cyber">
+                        <p>Cybersecurity</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="about">
+                <h3>About Department</h3>
+                <h4>Vision</h4>
+                <p>To emerge as a premier center of computer applications education and research, developing ethical, innovative, and globally competent technology leaders.</p>
+                <h4>Mission</h4>
+                <p>To provide high-quality education through modern curricula and state-of-the-art laboratories.<br>
+                   To foster research, problem-solving abilities, and industry collaborations among students.<br>
+                   To instill professional ethics, team spirit, and lifelong learning for societal advancement.</p>
+                <h4>Objectives</h4>
+                <p>1. Equip students with core software development skills and emerging industry frameworks.<br>
+                   2. Bridge academia and industry through guest lectures, hackathons, and industrial internships.<br>
+                   3. Encourage interdisciplinary research projects and higher education pursuits.</p>
+            </section>
+
+            <section id="faculty">
+                <h3>Faculty Details</h3>
+            
+                <div class="container">
+            
+                    <article class="card">
+                        <img src="./image1.jpeg">
+                        <h4>Prof. Oleti Durga Bravish</h4>
+                        <p><b>Professor</b></p>
+                        <p>Advanced Datascience Techniques</p>
+                    </article>
+            
+                    <article class="card">
+                        <img src="./image2.jpg">
+                        <h4>Prof. Abhishek A</h4>
+                        <p><b>Professor</b></p>
+                        <p>Advanced UI and UX Design for Developers</p>
+                    </article>
+            
+                    <article class="card">
+                        <img src="./image3.jpg">
+                        <h4>Prof. Dharshinee Nagarajan</h4>
+                        <p><b>Professor</b></p>
+                        <p>Communication and Life Skills</p>
+                    </article>
+            
+                    <article class="card">
+                        <img src="./image4.jpg">
+                        <h4>Prof. Pramisha Gewali</h4>
+                        <p><b>Professor</b></p>
+                        <p>Discrete Structures</p>
+                    </article>
+            
+                    <article class="card">
+                        <img src="./image5.jpg">
+                        <h4>Prof. Veera Raghavaiah Kathula</h4>
+                        <p><b>Professor</b></p>
+                        <p>Front-end Framework and Technologies</p>
+                    </article>
+            
+                    <article class="card">
+                        <img src="./image6.jpg">
+                        <h4>Prof. Kushal I Huddar</h4>
+                        <p><b>Professor</b></p>
+                        <p>Mastering Python</p>
+                    </article>
+            
+                </div>
+            </section>
+
+            <section id="courses">
+                <h3>Courses & MCA Subjects</h3>
+                <h4>Semester-Wise Subjects (MCA Program)</h4>
+                <table>
+                    <tr>
+                        <th>Semester</th>
+                        <th>Core Theory Subjects</th>
+                        <th>Practical Labs</th>
+                    </tr>
+                    <tr>
+                        <td>Semester I</td>
+                        <td>Front-end Framework, Advanced data Science, Problem Solving aptitude, Discrete Structures, Python, Communication Skills</td>
+                        <td>Front-end Framework, Python, Advanced UI/UX</td>
+                    </tr>
+                    <tr>
+                        <td>Semester II</td>
+                        <td>Data Structures in C++, DBMS, Discrete Mathematics, Operating Systems</td>
+                        <td>Data Structures Lab, SQL & Database Lab</td>
+                    </tr>
+                    <tr>
+                        <td>Semester III</td>
+                        <td>Java Programming, Computer Networks, Software Engineering, Web Tech</td>
+                        <td>Java Lab, Web Technologies Lab</td>
+                    </tr>
+                    <tr>
+                        <td>Semester IV</td>
+                        <td>Python Programming, Machine Learning, Cloud Computing, Major Project</td>
+                        <td>Python ML Lab, Project Implementation Lab</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="time">
+                <h3>Timetable</h3>
+                
+                <h4>Class Timetable</h4>
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th>9:00 AM - 11:00 AM</th>
+                        <th>11:15 AM - 1:15 PM</th>
+                        <th>2:00 PM - 4:00 PM</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Data Structures</td>
+                        <td>Python Theory</td>
+                        <td>Machine Learning</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Database Management</td>
+                        <td>Cloud Computing</td>
+                        <td>Cybersecurity Principles</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Generative AI Architecture</td>
+                        <td>DBMS Theory</td>
+                        <td>Game Engines & VR</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Software Engineering</td>
+                        <td>Computer Networks</td>
+                        <td>Ethics in Computing</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Algorithms & Logic</td>
+                        <td>Deep Learning Basics</td>
+                        <td>Project Review Session</td>
+                    </tr>
+                </table>
+
+                <h4>Lab Schedule</h4>
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th>Lab Slot (2:00 PM - 5:00 PM)</th>
+                        <th>Lab Location</th>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Data Science & Machine Learning Lab</td>
+                        <td>Computer Lab 1</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Python & Web Development Lab</td>
+                        <td>Computer Lab 3</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Game Design & VR Graphics Lab</td>
+                        <td>Multimedia Lab 2</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="achievement">
+                <h3>Achievements</h3>
+
+                <h4>Student Achievements</h4>
+                <p>• 1st prize at National Level Hackathon 2025 for building an AI-Powered Smart Traffic Management System.<br>
+                   • 100% placement rate for MCA batch across multinational IT software enterprises.<br>
+                   • Outstanding Performance Award at International Collegiate Programming Contest (ICPC).</p>
+
+                <h4>Faculty Achievements</h4>
+                <p>• Prof. Kushal I Huddar published 5 research papers in IEEE international journals.<br>
+                   • Prof. Veera Raghavaiah Kathula awarded Best Educator in Technical Education 2025.<br>
+                   • Prof. Pramisha Gewali authored the textbook "Modern Cloud Computing & Security Frameworks."</p>
+
+                <h4>Events Completed</h4>
+                <p>• Successfully organized 50+ technical workshops, inter-college seminars, and national code sprints.</p>
+            </section>
+
+            <section id="events">
+                <h3>Events</h3>
+                
+                <h4>Workshops</h4>
+                <p>• Hands-on Workshop on Generative AI, Prompt Engineering, & Large Language Models (LLMs).<br>
+                   • Hands-on Cyber Forensics and Penetration Testing Masterclass.</p>
+                
+                <h4>Seminars</h4>
+                <p>• International Seminar on Cyber Security & Blockchain Infrastructure.<br>
+                   • Tech Talk on Quantum Computing Trends and Future Careers.</p>
+                
+                <h4>Hackathons</h4>
+                <p>• 24-Hour Non-stop Code-A-Thon: Building Next-Gen Web Solutions.<br>
+                   • GameJam 2026: 48-Hour Game Development Sprint.</p>
+            </section>
+
+                <h3>Announcements</h3>
+                <p>Mid-semester examinations begin next Monday. Check notice boards for seating arrangements.</p>
+                
+            <section id="contact">
+                <h3>Contact Us</h3>
+                <p><b>Department Address:</b> Department of Computer Applications, Main Campus, Tech Block, City - 560001</p>
+                <p><b>Email:</b> contact@department.edu | <b>Phone:</b> +1 800-555-0199</p>
+
+                <h4>Contact Form</h4>
+                <form>
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your Email" required>
+                    <label>Subject</label>
+                    <input type="text" placeholder="Subject" required>
+                    <label>message/feedback</label>
+                    <textarea rows="4" placeholder="Query" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p> Department of Computer Applications. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
